@@ -13,7 +13,5 @@ card.appendChild(div);}
 {const div=document.createElement("div");div.classList.add("collapse","expanded","right");{const span=document.createElement("span");span.classList.add("localized");span.lang="en";span.appendChild(document.createTextNode("[close]"));span.addEventListener("click",event=>{__collapse(card);event.stopPropagation();});div.appendChild(span);}
 {const span=document.createElement("span");span.classList.add("localized");span.lang="de";span.appendChild(document.createTextNode("[einklappen]"));span.addEventListener("click",event=>{__collapse(card);event.stopPropagation();});div.appendChild(span);}
 card.appendChild(div);}}
-card.addEventListener("click",()=>{__expand(card);});container.appendChild(card);});content.appendChild(container);});{const div=document.createElement("div");div.classList.add("top");{const span=document.createElement("span");span.classList.add("localized");span.lang="en";span.appendChild(document.createTextNode("[to top]"));div.appendChild(span);}
-{const span=document.createElement("span");span.classList.add("localized");span.lang="de";span.appendChild(document.createTextNode("[nach oben]"));div.appendChild(span);}
-div.addEventListener("click",()=>{window.scrollTo({top:0,behavior:"smooth"});});content.appendChild(div);}}
+card.addEventListener("click",()=>{__expand(card);});container.appendChild(card);});content.appendChild(container);});}
 static build(){fetch("json/portfolio.json").then(response=>response.json()).then(data=>{Portfolio.#build(data.content);}).then(()=>{switch_lang(window.lang);}).catch(console.error);}}
