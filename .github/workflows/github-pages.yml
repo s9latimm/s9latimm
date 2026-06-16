@@ -39,6 +39,7 @@ jobs:
             ${{ matrix.path }}/web/js/
             ${{ matrix.path }}/web/json/
             ${{ matrix.path }}/web/files/
+            ${{ matrix.path }}/web/images/
 
   deploy:
     needs: build
