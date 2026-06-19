@@ -1,0 +1,12 @@
+User-agent: *
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /js/
+Disallow: /json/
+
+User-agent: Googlebot
+Allow: /css/
+Allow: /js/
+Allow: /json/
+
+Sitemap: https://s9latimm.github.io/sitemap.xml

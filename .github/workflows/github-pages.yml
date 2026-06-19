@@ -35,6 +35,8 @@ jobs:
           overwrite: true
           path: |
             ${{ matrix.path }}/web/index.html
+            ${{ matrix.path }}/web/robots.txt
+            ${{ matrix.path }}/web/sitemap.xml
             ${{ matrix.path }}/web/css/
             ${{ matrix.path }}/web/js/
             ${{ matrix.path }}/web/json/
